@@ -14,7 +14,7 @@ Print YES if Vasya can divide the array after moving one element. Otherwise prin
 
 #include<iostream>
 #include<vector>
-#include<map>
+#include<unordered_map>
 using namespace std;
 
 int main()
@@ -33,7 +33,7 @@ int main()
           return 0;
       }
     
-    map<long long,int> first, second;
+    unordered_map<long long,int> first, second;
     first[A[0]]=1;
     for(int i=1;i<n;i++)
     {
